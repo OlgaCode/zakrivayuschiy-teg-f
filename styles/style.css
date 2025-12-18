@@ -145,7 +145,7 @@
   display: flex;
   justify-content: flex-end;
   padding: 0 25px 0 0;
-  margin-block-end: 23px;
+  margin-block-end: 25px;
   gap: 6px;
   align-items: center;
 }
@@ -157,6 +157,14 @@
   border: none;
   outline: none;
   background-color: transparent;
+}
+
+.card__icon-button {
+  block-size: 35px;
+}
+
+.card__icon-button:focus-visible {
+  outline: 2px solid var(--content-color);;
 }
 
 .contour {
@@ -325,6 +333,11 @@
   padding: 15px 19px;
   background-color: var(--bg-color, #fff);
   border: 2px solid var(--content-color);
+  outline: none;
+}
+
+.footer__save-button:focus-visible {
+  box-shadow: 2px 2px 0 var(--content-color);
 }
 
 .floppy {
@@ -399,6 +412,12 @@ dialog::backdrop {
   font-size: 14px;
   font-weight: 400;
   line-height: 90%;
+
+  outline: none;
+}
+
+.popup__button-exit:focus-visible {
+  box-shadow: 2px 2px 0 var(--content-color);
 }
 
 @media (width <= 375px) {
