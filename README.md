@@ -1,1 +1,1 @@
-https://github.com/OlgaCode/zakrivayuschiy-teg-f.git
+https://github.com/OlgaCode/zakrivayuschiy-teg-f.git 
