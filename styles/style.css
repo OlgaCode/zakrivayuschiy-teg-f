@@ -24,7 +24,7 @@
 }
 
 .header {
-  font-family: var(--accent-font, 'PressStart2P'), sans-serif;
+  font-family: var(--accent-font, 'PressStart2P'), 'fantasy', sans-serif;
   background-color: var(--bg-color, #fff);
   border: 2px solid var(--content-color);
   
@@ -39,11 +39,11 @@
 }
 
 .width_content {
-  width: clamp(379px, 260.56px + 30.52vw, 704px);
+  width: clamp(375px, 260.56px + 30.52vw, 704px);
 }
 
 .card.width_content {
-  width: clamp(379px, 260.56px + 30.52vw, 700px);
+  width: clamp(375px, 260.56px + 30.52vw, 700px);
 }
 
 .header__logo {
@@ -106,10 +106,11 @@
 }
 
 .card__image-label {
-  font-family: var(--accent-font, 'PressStart2P'), sans-serif;
+  font-family: var(--accent-font, 'PressStart2P'), 'fantasy', sans-serif;
   font-size: 14px;
   line-height: 100%;
   text-transform: uppercase;
+  opacity: 0.5;
   position: absolute;
   inset-inline-end: 25px;
   inset-block-start: 25px;
@@ -272,7 +273,7 @@
 
 .button__text {
   position: relative;
-  font-family: var(--accent-font, 'PressStart2P'), sans-serif;
+  font-family: var(--accent-font, 'PressStart2P'), 'fantasy', sans-serif;
   color: var(--bg-color, #fff);
   font-size: 14px;
   line-height: 90%;
@@ -288,7 +289,7 @@
   animation: sparksShow 0.3s 0.3s ease-in 1 alternate;
 }
 
-.footer {
+.save__block {
   margin-block-end: 100px;
 }
 
@@ -323,7 +324,7 @@
 }
 
 
-.footer__save-button {
+.save__block-button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -336,7 +337,7 @@
   outline: none;
 }
 
-.footer__save-button:focus-visible {
+.save__block-button:focus-visible {
   box-shadow: 2px 2px 0 var(--content-color);
 }
 
@@ -356,7 +357,6 @@
   padding: 30px;
 
   max-width: 357px;
-  min-height: 193px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -388,7 +388,7 @@ dialog::backdrop {
 
 .popup__content-text {
   color: var(--content-color);
-  font-family: var(--accent-font, 'PressStart2P'), sans-serif;
+  font-family: var(--accent-font, 'PressStart2P'), 'fantasy', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 150%;
@@ -408,7 +408,7 @@ dialog::backdrop {
   box-shadow: 2px 2px 0 transparent;
   transition: box-shadow 0.3s ease;
 
-  font-family: var(--accent-font, 'PressStart2P'), sans-serif;
+  font-family: var(--accent-font, 'PressStart2P'), 'fantasy', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 90%;
@@ -422,7 +422,7 @@ dialog::backdrop {
 
 @media (width <= 375px) {
 
-  .footer__save-button {
+  .save__block-button {
     flex-direction: column;
   }
 
